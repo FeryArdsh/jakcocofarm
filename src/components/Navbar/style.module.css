@@ -1,0 +1,19 @@
+.nav__bg{
+    background-color: #34495E;
+}
+
+.nav__bg a{
+    color: rgb(211, 211, 211);
+}
+
+.nav__bg a:hover{
+    color: white;
+}
+
+.logo{
+    padding: 0;
+}
+
+.logo__img{
+    height: 50px;
+}
