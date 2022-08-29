@@ -6,6 +6,7 @@ import naturalLogo from "../../assets/naturalLogo.png";
 import Benefit from "../../components/Benefit";
 import Carousel from "../../components/Carousel";
 import Footer from "../../components/Footer";
+import Whatsapp from "../../components/Whatsapp";
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
       </div>
 
       <div
-        className={`container d-flex align-items-center justify-content-around ${style.services}`}
+        className={`container d-flex align-items-center justify-content-around flex-wrap ${style.services}`}
       >
         <Benefit text="BEST PRICE" icon="bi bi-cash" />
         <Benefit text="BEST PACKAGING" icon="bi bi-box-seam" />
@@ -34,12 +35,12 @@ const Home = () => {
       <div className={`d-flex align-items-center ${style.bg__description}`}>
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-12 col-lg-6">
               <div className="text-center">
                 <img className={style.logo} src={naturalLogo} alt="logo" />
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-lg-6 mt-4 mt-lg-0">
               <div className={style.home__description}>
                 <span>
                   <b>JAKCOCOFARM </b>
@@ -82,42 +83,77 @@ const Home = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-6 border-end border-dark">
-            <h5>Order Sample</h5>
+          <div className="col-12 col-lg-6 border-end border-dark">
+            <h5 className="ms-3">Order Sample</h5>
             <ul>
-              <li className="my-5 fw-bold">
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
                 <i className="bi bi-caret-right-fill"></i>
                 Sample products are only for certain products (organic coconut
                 sugar & briquettes )
               </li>
-              <li className="mb-5 fw-bold">
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
                 <i className="bi bi-caret-right-fill"></i> Free for 1 Kg sample
                 product
               </li>
-              <li className="mb-5 fw-bold">
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
                 <i className="bi bi-caret-right-fill"></i> Shipping costs are
                 borne by the buyer
               </li>
-              <li className="mb-5 fw-bold">
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
                 <i className="bi bi-caret-right-fill"></i> Shipment will be sent
                 after the buyer pays the shipping fee
               </li>
-              <li className="mb-5 fw-bold">
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
                 <i className="bi bi-caret-right-fill"></i> Sample products will
                 be sent by air freight
               </li>
-              <li className="mb-5 fw-bold">
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
                 <i className="bi bi-caret-right-fill"></i> Immediately contact
                 whatsapp or email us to order a sample with a sample order
                 subject
               </li>
             </ul>
           </div>
-          <div className="col-6">
-            <h5>Order Sample</h5>
+
+          <div className="col-12 col-lg-6 mt-5 mt-lg-0">
+            <h5 className="ms-3">Order Proses</h5>
+            <ul>
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
+                <i className="bi bi-caret-right-fill"></i>
+                Buyer
+              </li>
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
+                <i className="bi bi-caret-right-fill"></i> Product Spesification
+                & price list for buyer
+              </li>
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
+                <i className="bi bi-caret-right-fill"></i> Buyer Request order
+                on whatsapp or email
+              </li>
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
+                <i className="bi bi-caret-right-fill"></i>Proforma Invoice &
+                Negotiation
+              </li>
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
+                <i className="bi bi-caret-right-fill"></i> Order Deal & Invoice
+              </li>
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
+                <i className="bi bi-caret-right-fill"></i> Payment Process L/C
+                or T/T 100% Pre-payment or 50 % Down-payment
+              </li>
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
+                <i className="bi bi-caret-right-fill"></i> Shipping Process FOB
+                / CIF
+              </li>
+              <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
+                <i className="bi bi-caret-right-fill"></i> Exporter send product
+                to the buyer destination port
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <Whatsapp />
       <Footer />
     </>
   );

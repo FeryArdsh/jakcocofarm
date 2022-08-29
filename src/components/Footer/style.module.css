@@ -3,3 +3,9 @@
     height: 163px;
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer__container{
+        height: 100%;
+    }
+  }
