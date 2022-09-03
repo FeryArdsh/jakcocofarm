@@ -13,3 +13,9 @@
     box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.356);
     color: rgba(255, 255, 255, 0.788);
 }
+
+@media only screen and (max-width: 600px) {
+    .title__carousel{
+        font-size: 14px;
+    }
+  }

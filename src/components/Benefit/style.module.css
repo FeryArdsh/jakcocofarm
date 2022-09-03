@@ -8,6 +8,10 @@
     color: rgb(255, 255, 255);
 }
 
+.benefit__container{
+    width: 150px;
+}
+
 @media only screen and (max-width: 600px) {
     .benefit__icon{
         font-size: 20px;

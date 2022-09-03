@@ -1,4 +1,5 @@
 import pSugar from "./assets/pSugar.jpeg";
+import briquettes from "./assets/briquettes.jpg";
 
 const dataProduct = [
   {
@@ -20,24 +21,12 @@ const dataProduct = [
     location: "West Java",
     packaging: "Private Label & OEM",
     certificate: "Report Of Analysis",
-    image: `${pSugar}`,
+    image: `${briquettes}`,
     titleDescription: "Briquettes Charcoal Coconut",
     description: [
-      "Made from 100% coconut flower sap, processed hygienically without using chemicals (sulphite free) from organic coconut plantations in Central Java.",
-      "Coconut sugar is very good for diabetics because it has a low glycemic index (LOW GI). For a healthier life, use organic coconut sugar as a sweetener in various foods & beverages",
-    ],
-  },
-  {
-    id: 3,
-    title: "Coco Fibre",
-    location: "West Java",
-    packaging: "Paper Bags 25 Kg With Plastic Inner - 49 X 85",
-    certificate: "FDA, JAS, CU, USDA, HACCP, MUI, BPOM",
-    image: `${pSugar}`,
-    titleDescription: "Coco Fibre",
-    description: [
-      "Made from 100% coconut flower sap, processed hygienically without using chemicals (sulphite free) from organic coconut plantations in Central Java.",
-      "Coconut sugar is very good for diabetics because it has a low glycemic index (LOW GI). For a healthier life, use organic coconut sugar as a sweetener in various foods & beverages",
+      "Our production base are located in Tangerang, Banten",
+      "We assure that we use high-quality raw materials, prices production process, and maximum drying, and we ensure that there are no cracks on the surface of the briquttes and have lot of benefits.",
+      "Made from 100% premium quality coconut shells. Suitable for  shisha/hookah and others as it is completely safe to use indoors, is odorless, smokeless, and burns twice as long as wood charcoal.",
     ],
   },
 ];
