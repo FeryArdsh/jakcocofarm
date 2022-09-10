@@ -20,7 +20,9 @@ const Home = () => {
             <span>THE COCONUT DERIVATIVES</span>
             <h2 className="mt-4">Best Quality</h2>
             <h2 className="mb-5">From Indonesian Nature</h2>
-            <Button text="Get More" />
+            <div className="pe-5 w-50">
+              <Button text="Get More" />
+            </div>
           </div>
         </div>
 

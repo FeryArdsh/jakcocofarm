@@ -51,7 +51,6 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            <Button text="Shop Now" />
           </div>
         </div>
       </nav>

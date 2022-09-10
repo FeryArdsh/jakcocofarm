@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Button from "../../components/Button";
 import Card from "../../components/Card";
 import Footer from "../../components/Footer";
@@ -32,10 +32,10 @@ const DetailProduct = () => {
       {data && (
         <div className="container">
           <div className="row my-5">
-            <div className="col-7 px-5">
+            <div className="col-md-7 col-12 px-md-5 p-1">
               <img className="img-fluid" src={data.image} alt="" />
             </div>
-            <div className="col-5">
+            <div className="col-md-5 mt-5 mt-md-0 col-12">
               <h1>{data.title}</h1>
               <span className="text-muted d-block mb-4">
                 <i className="bi bi-geo-alt"></i> {data.location}
@@ -53,16 +53,21 @@ const DetailProduct = () => {
                   <p>19.000 Kg</p>
                 </div>
                 <div className="border-end col-4 text-center">
-                  <h6>Minimal Order</h6>
+                  <h6>Estimated Production</h6>
                   <p>19.000 Kg</p>
                 </div>
                 <div className="border-end col-4 text-center">
-                  <h6>Minimal Order</h6>
+                  <h6>Shippment From</h6>
                   <p>19.000 Kg</p>
                 </div>
               </div>
               <div className="row mt-4">
-                <Button text="Shop Now" />
+                <a
+                  className="w-100 d-inline-block"
+                  href="https://wa.me/6282123039573"
+                >
+                  <Button text="Shop Now" />
+                </a>
               </div>
             </div>
           </div>
@@ -70,8 +75,8 @@ const DetailProduct = () => {
           {/* Deskripsi Product */}
 
           <div className="row d-flex justify-content-center">
-            <div className="col-10 text-center border p-5 shadow-sm my-5">
-              <h6>{data.titleDescription}</h6>
+            <div className="col-10 text-center border p-md-5 p-4 shadow-sm my-5">
+              <h6 className="fw-bold mb-4">{data.titleDescription}</h6>
               <p>{data.description[0]}</p>
               <p>{data.description[1]}</p>
               <p>{data.description[2]}</p>
@@ -80,15 +85,20 @@ const DetailProduct = () => {
 
           {/* Card Product */}
 
-          <div className="row">
-            <div className="my-5 d-flex justify-content-around">
+          <div className="row mb-5">
+            <div className="my-5 d-flex justify-content-around flex-wrap">
               {dataProduct.map((data) => (
-                <div key={data.id}>
-                  <Card
-                    image={data.image}
-                    title={data.title}
-                    location={data.location}
-                  />
+                <div className="mt-5 mt-md-0" key={data.id}>
+                  <Link
+                    className="text-decoration-none text-black"
+                    to={"/detail-product/" + data.id}
+                  >
+                    <Card
+                      image={data.image}
+                      title={data.title}
+                      location={data.location}
+                    />
+                  </Link>
                 </div>
               ))}
             </div>

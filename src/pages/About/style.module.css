@@ -1,0 +1,22 @@
+.bg__about {
+  background-image:linear-gradient(rgb(0, 0,0, 0.6),rgba(0, 0, 0, 0.6)), url(../../assets/about.png);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+}
+
+.black__logo{
+    margin-bottom: -100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .black__logo{
+    width: 290px;
+    margin-bottom: -40px;
+    margin-top: 50px;
+  }
+}

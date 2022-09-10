@@ -1,18 +1,19 @@
 import React from "react";
 import Button from "../../components/Button";
 import Navbar from "../../components/Navbar";
+import contactIlustration from "../../assets/contactIlustration.png";
 
 const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="container mt-5 p-5 shadow-lg">
+      <div className="container rounded my-5 p-5 shadow-lg text-black">
         <div className="text-center mb-4">
           <h3>Contact Us</h3>
         </div>
         <div className="row">
-          <div className="col-6">
-            <form>
+          <div className="col-6 mt-5">
+            <form action="https://formspree.io/f/xrgdejbn" method="POST">
               <div className="mb-3">
                 <label for="name" className="form-label">
                   Name
@@ -21,6 +22,7 @@ const Contact = () => {
                   type="text"
                   className="form-control"
                   id="name"
+                  name="name"
                   placeholder="Your Name"
                 />
               </div>
@@ -32,6 +34,7 @@ const Contact = () => {
                   type="email"
                   className="form-control"
                   id="email"
+                  name="email"
                   placeholder="example@gmail.com"
                 />
               </div>
@@ -43,12 +46,19 @@ const Contact = () => {
                   className="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
+                  name="message"
                 ></textarea>
               </div>
-              <Button text="Send" />
+              <Button text="Send" tipe="submit" />
             </form>
           </div>
-          <div className="col-6">whatsapp</div>
+          <div className="col-6 px-5">
+            <img
+              className="img-fluid px-5"
+              src={contactIlustration}
+              alt="contact us"
+            />
+          </div>
         </div>
       </div>
     </>
