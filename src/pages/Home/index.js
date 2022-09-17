@@ -7,6 +7,9 @@ import Benefit from "../../components/Benefit";
 import Carousel from "../../components/Carousel";
 import Footer from "../../components/Footer";
 import Whatsapp from "../../components/Whatsapp";
+import { Link } from "react-router-dom";
+import flowchart from "../../assets/flowchart.png";
+import orderSample from "../../assets/orderSample.png";
 
 const Home = () => {
   return (
@@ -20,8 +23,10 @@ const Home = () => {
             <span>THE COCONUT DERIVATIVES</span>
             <h2 className="mt-4">Best Quality</h2>
             <h2 className="mb-5">From Indonesian Nature</h2>
-            <div className="pe-5 w-50">
-              <Button text="Get More" />
+            <div className="pe-md-5 p-0 w-50">
+              <Link to="/about">
+                <Button text="Get More" />
+              </Link>
             </div>
           </div>
         </div>
@@ -80,80 +85,25 @@ const Home = () => {
 
         <div className={`container ${style.regulation}`}>
           <div className="row">
-            <div className="col-12 text-center">
-              <h3>REGULARION</h3>
-              <h4>Rules Order</h4>
+            <div className="col-12 text-center mb-3 pt-3">
+              <h3>REGULATION</h3>
             </div>
           </div>
           <div className="row">
             <div className="col-12 col-lg-6 border-end border-dark">
-              <h5 className="ms-3">Order Sample</h5>
-              <ul>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i>
-                  Sample products are only for certain products (organic coconut
-                  sugar & briquettes )
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Free for 1 Kg
-                  sample product
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Shipping costs are
-                  borne by the buyer
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Shipment will be
-                  sent after the buyer pays the shipping fee
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Sample products
-                  will be sent by air freight
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Immediately contact
-                  whatsapp or email us to order a sample with a sample order
-                  subject
-                </li>
-              </ul>
+              <img
+                className="img-fluid p-3"
+                src={orderSample}
+                alt="Order Sample"
+              />
             </div>
 
             <div className="col-12 col-lg-6 mt-5 mt-lg-0">
-              <h5 className="ms-3">Order Proses</h5>
-              <ul>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i>
-                  Buyer
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Product
-                  Spesification & price list for buyer
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Buyer Request order
-                  on whatsapp or email
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i>Proforma Invoice &
-                  Negotiation
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Order Deal &
-                  Invoice
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Payment Process L/C
-                  or T/T 100% Pre-payment or 50 % Down-payment
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Shipping Process
-                  FOB / CIF
-                </li>
-                <li className="mb-3 mb-lg-5 fw-semibold fw-lg-bold">
-                  <i className="bi bi-caret-right-fill"></i> Exporter send
-                  product to the buyer destination port
-                </li>
-              </ul>
+              <img
+                className="img-fluid p-3"
+                src={flowchart}
+                alt="Order Proses"
+              />
             </div>
           </div>
         </div>

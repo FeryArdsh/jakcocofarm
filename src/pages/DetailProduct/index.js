@@ -25,7 +25,13 @@ const DetailProduct = () => {
     setData(getDetailProduct);
   }, [data, getData]);
 
-  console.log(data);
+  useEffect(() => {
+    document.title = `${data?.title} | Jakcocofarm`;
+    return () => {
+      document.title = "Jakcocofarm";
+    };
+  }, [data]);
+
   return (
     <>
       <Navbar />
@@ -50,15 +56,15 @@ const DetailProduct = () => {
               <div className="row">
                 <div className="border-end col-4 text-center">
                   <h6>Minimal Order</h6>
-                  <p>19.000 Kg</p>
+                  <p>{data.minOrder}</p>
                 </div>
                 <div className="border-end col-4 text-center">
                   <h6>Estimated Production</h6>
-                  <p>19.000 Kg</p>
+                  <p>{data.minOrder}</p>
                 </div>
                 <div className="border-end col-4 text-center">
                   <h6>Shippment From</h6>
-                  <p>19.000 Kg</p>
+                  <p>{data.minOrder}</p>
                 </div>
               </div>
               <div className="row mt-4">
@@ -92,6 +98,7 @@ const DetailProduct = () => {
                   <Link
                     className="text-decoration-none text-black"
                     to={"/detail-product/" + data.id}
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     <Card
                       image={data.image}

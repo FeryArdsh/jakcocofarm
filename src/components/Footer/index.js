@@ -15,19 +15,19 @@ const Footer = () => {
             <div className="mb-2">
               <Link
                 className="me-4 me-lg-4 text-decoration-none fw-bold text-white"
-                to="/"
+                to="/about"
               >
                 About Us
               </Link>
               <Link
                 className="me-4 me-lg-4 text-decoration-none fw-bold text-white"
-                to="/"
+                to="/detail-product/1"
               >
                 Product
               </Link>
               <Link
                 className="me-4 me-lg-4 text-decoration-none fw-bold text-white"
-                to="/"
+                to="/contact"
               >
                 Contact
               </Link>

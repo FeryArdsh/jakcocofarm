@@ -12,10 +12,10 @@ const Contact = () => {
           <h3>Contact Us</h3>
         </div>
         <div className="row">
-          <div className="col-6 mt-5">
+          <div className="col-md-6 col-12 mt-5">
             <form action="https://formspree.io/f/xrgdejbn" method="POST">
               <div className="mb-3">
-                <label for="name" className="form-label">
+                <label htmlFor="name" className="form-label">
                   Name
                 </label>
                 <input
@@ -27,7 +27,7 @@ const Contact = () => {
                 />
               </div>
               <div className="mb-3">
-                <label for="email" className="form-label">
+                <label htmlFor="email" className="form-label">
                   Email address
                 </label>
                 <input
@@ -39,7 +39,10 @@ const Contact = () => {
                 />
               </div>
               <div className="mb-4">
-                <label for="exampleFormControlTextarea1" className="form-label">
+                <label
+                  htmlFor="exampleFormControlTextarea1"
+                  className="form-label"
+                >
                   Your Message
                 </label>
                 <textarea

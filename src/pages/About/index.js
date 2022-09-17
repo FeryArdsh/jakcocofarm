@@ -13,10 +13,22 @@ const About = () => {
         <h1 className="m-auto">ABOUT US</h1>
       </div>
       <div className="container d-flex flex-wrap justify-content-center mt-5">
-        <AboutBenefit />
-        <AboutBenefit />
-        <AboutBenefit />
-        <AboutBenefit />
+        <AboutBenefit
+          title="Best Product"
+          desc="All the products we offer have been certified with the highest quality international standards"
+        />
+        <AboutBenefit
+          title="Best Price"
+          desc="The best price for the best buyer with the best product quality"
+        />
+        <AboutBenefit
+          title="Best Packaging"
+          desc="The packaging we use is made and produced with the best and neatest materials"
+        />
+        <AboutBenefit
+          title="Best Service"
+          desc="Our service is available 24 hours, friendly, and customer priority is the first"
+        />
       </div>
       <div className="text-center fw-bold text-black container px-5 mb-5 position-relative">
         <img className={style.black__logo} src={blackLogo} alt="jakcocofarm" />

@@ -1,4 +1,4 @@
-import pSugar from "./assets/pSugar.jpeg";
+import cSugar from "./assets/cSugar.jpg";
 import briquettes from "./assets/briquettes.jpg";
 
 const dataProduct = [
@@ -6,12 +6,12 @@ const dataProduct = [
     id: 1,
     title: "Coconut Sugar",
     location: "West Java",
-    minOrder: "19,000 Kg",
+    minOrder: "19.000 Kg",
     estimated: "20 Day",
     shippment: "Tanjung Priok",
     packaging: "Paper Bags 25 Kg With Plastic Inner - 49 X 85",
     certificate: "FDA, JAS, CU, USDA, HACCP, MUI, BPOM",
-    image: `${pSugar}`,
+    image: `${cSugar}`,
     titleDescription: "NUCIFERA ORGANIC COCONUT SUGAR",
     description: [
       "Made from 100% coconut flower sap, processed hygienically without using chemicals (sulphite free) from organic coconut plantations in Central Java.",
@@ -22,7 +22,7 @@ const dataProduct = [
     id: 2,
     title: "Briquettes",
     location: "West Java",
-    minOrder: "18,000 Kg",
+    minOrder: "18.000 Kg",
     estimated: "20 Day",
     shippment: "Tanjung Priok",
     packaging: "Private Label & OEM",
